@@ -251,7 +251,8 @@ ON performances.movie_id = movies.id;
 SELECT actors.name, agents.name
 FROM agents
 INNER JOIN actors
-ON agents.id = actors.agent_id;
+ON agents.id = actors.agent_id
+ORDER BY agents.name;
 
 -- Example output:
 -- Represented by agent
