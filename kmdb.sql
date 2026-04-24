@@ -243,6 +243,11 @@ ON performances.movie_id = movies.id;
 
 -- ***TODO!***
 -- The SQL statement for the represented actor(s) output goes here.
+-- NOT VERY CLEAR WHAT OUTPUT IS WANTED HERE SO I just pulled list of agnet and actors based on the user story request.
+SELECT actors.name, agents.name
+FROM agents
+INNER JOIN actors
+ON agents.id = actors.agent_id;
 
 -- Example output:
 -- Represented by agent
