@@ -182,6 +182,10 @@ VALUES
 (3, 10, "John Blake"),
 (3, 11, "Selina Kyle");
 
+UPDATE agents
+SET name = "Nimesh Patel"
+WHERE id = 2;
+
 
 -- Prints a header for the movies output
 .print "Movies"
